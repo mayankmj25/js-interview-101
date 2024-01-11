@@ -23,34 +23,34 @@
 
 
 
-// 2. setInterval, clearInterval
-// via generating random color
+// // 2. setInterval, clearInterval
+// // via generating random color
 
-// third param in setInterval is used to pass argument in callback
+// // third param in setInterval is used to pass argument in callback
 
-const randomColor = () => {
-    const hex = '0123456789ABCDEF';
-    let res = '#';
-    for(let i=0;i<=5;i++){
-        const x = Math.floor(Math.random()*16)
-        res += (hex[x]);
-    }
-    return res;
-}
+// const randomColor = () => {
+//     const hex = '0123456789ABCDEF';
+//     let res = '#';
+//     for(let i=0;i<=5;i++){
+//         const x = Math.floor(Math.random()*16)
+//         res += (hex[x]);
+//     }
+//     return res;
+// }
 
-const changeColor = () => {
-    document.body.style.backgroundColor = randomColor();
-}
+// const changeColor = () => {
+//     document.body.style.backgroundColor = randomColor();
+// }
 
-   let interval = null
+//    let interval = null
 
-document.querySelector('#start').addEventListener('click', () => {
-   if(interval === null ) interval =  setInterval(changeColor, 1000);
-})
+// document.querySelector('#start').addEventListener('click', () => {
+//    if(interval === null ) interval =  setInterval(changeColor, 1000);
+// })
 
-document.querySelector('#stop').addEventListener('click', () => {
-    clearInterval(interval)
-    interval = null;
-})
+// document.querySelector('#stop').addEventListener('click', () => {
+//     clearInterval(interval)
+//     interval = null;
+// })
 
 
